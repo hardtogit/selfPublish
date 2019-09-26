@@ -1,0 +1,46 @@
+<div class="i106">
+  <div ng-include="'header.html'"></div>
+  <div class="banner" data-ng-style="{'background-image':'url('+staticRootPath+entity.banner+')'}">
+    <!--<img  class="bannerImg" ng-src="{{staticRootPath+entity.banner}}" alt="">-->
+    <div class="container">
+      <img src="./img/i106/one1.png" class="label"/>
+    </div>
+  </div>
+  <div class="two">
+    <div class="container">
+      <div class="left" style="cursor:pointer" ng-click="openLeft()">
+        <img class="bg"  ng-src="{{staticRootPath+entity.des1}}" alt="">
+        <div class="bottom">
+          社会招聘
+        </div>
+      </div>
+      <div class="right" style="cursor:pointer" ng-click="openRight()">
+        <img class="bg"  ng-src="{{staticRootPath+entity.des2}}" alt="">
+        <div class="bottom">
+        校园招聘
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="three">
+    <div class="container">
+      <img class="title" src="./img/i106/three1.png" alt="">
+      <div class="items">
+        <div class="item">
+          <div class="title">{{entity.title}}</div>
+          <div ng-repeat="item in entity.content">
+            {{item}}
+          </div>
+        </div>
+        <div class="item" ng-repeat="item in entity.joinsubcompany">
+          <div class="title">{{item.name}}</div>
+          地址：{{item.address}}<br/>
+          邮箱：{{item.email}}<br/>
+          电话：{{item.phone}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div ng-include="'baseFooter.html'"></div>
