@@ -1,6 +1,6 @@
-iweb.controller('i104', function($scope,) {
+iweb.controller('i104', function($scope,$rootScope) {
   $scope.tab=1
-  $scope.type=getQueryString('type')?getQueryString('type'):1
+  $scope.type=getQueryString('type')?parseInt(getQueryString('type')):1
   $scope.detail=false
   $scope.detailId=1
   $scope.entity={}
@@ -68,7 +68,7 @@ iweb.controller('i104', function($scope,) {
   $scope.close=function () {
     $scope.detail=false
   }
-    apiconn.state_changed_handler = function () {
+    $rootScope.$on('STATE_CHANGED_HANDLER',function () {
         if (apiconn.conn_state == "LOGIN_SCREEN_ENABLED") {
             window.ajax({
                 obj: 'user',
@@ -91,5 +91,5 @@ iweb.controller('i104', function($scope,) {
                 console.log($scope.entity, 'aaaaaaaaaaaaaaaaa')
             })
         }
-    }
+    })
 })

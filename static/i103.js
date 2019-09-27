@@ -1,4 +1,4 @@
-iweb.controller('i103', function($scope) {
+iweb.controller('i103', function($scope,$rootScope) {
   $scope.entity={}
   // $scope.detail=$routeParams.detailId?true:false
   // $scope.detailId=$routeParams.detailId?parseInt($routeParams.detailId):1
@@ -23,7 +23,7 @@ iweb.controller('i103', function($scope) {
         }})
     })
   }
-    apiconn.state_changed_handler = function () {
+    $rootScope.$on('STATE_CHANGED_HANDLER',function () {
         if (apiconn.conn_state == "LOGIN_SCREEN_ENABLED") {
             window.ajax({
                 obj:'user',
@@ -34,5 +34,5 @@ iweb.controller('i103', function($scope) {
             })
             getNews(0)
         }
-    }
+    })
 })

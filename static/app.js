@@ -26,10 +26,7 @@ function getQueryString(name) {
     return null;
 }
 function goto_view(v) {
-    $(window).scrollTop(0);
-    var baseUrl = window.location.href;
-    baseUrl = (baseUrl.indexOf('#') > 0 ? baseUrl.substr(0, baseUrl.indexOf('#')) : baseUrl);
-    window.location.href = baseUrl + "/" + v;
+   window.location.href=v
 }
 function logout() {
     sessionStorage.setItem("login_name", "");
@@ -52,45 +49,6 @@ apiconn.client_info.clienttype = "web";
 
 apiconn.state_changed_handler = function () {
     rootScope.$apply(function () {
-
-        console.log("state: " + apiconn.from_state + " => " + apiconn.conn_state);
-
-
-        if (apiconn.conn_state == "IN_SESSION") {
-            sessionStorage.setItem("login_name", apiconn.login_name);
-            sessionStorage.setItem("login_passwd", apiconn.login_passwd);
-            sessionStorage.setItem("credential_data", JSON.stringify(apiconn.credential_data))
-            // window.location.reload()
-        } else if (apiconn.conn_state == "LOGIN_SCREEN_ENABLED") {
-
-            // auto re login after page refresh
-
-            if (apiconn.login_name == "" && apiconn.credential_data == null) {
-
-                var login_name = sessionStorage.getItem("login_name");
-                var login_passwd = sessionStorage.getItem("login_passwd");
-
-                var cred = sessionStorage.getItem("credential_data");
-                var cred_obj = null;
-                console.log(cred, 'sssssssssssssssssssssssssssss')
-                if (cred !== "") cred_obj = JSON.parse(cred);
-                // alert('s')
-                // reset stored cred to prevent infinite loop in case of failure
-                sessionStorage.setItem("login_name", "");
-                sessionStorage.setItem("login_passwd", "");
-                sessionStorage.setItem("credential_data", "");
-
-                if (login_name != "" && login_name != null) {
-                    apiconn.login(login_name, login_passwd);
-
-                } else if (cred_obj != null) {
-                    apiconn.loginx(cred_obj);
-
-                } else {}
-            }
-
-        }
-
         rootScope.$broadcast("STATE_CHANGED_HANDLER", {});
     });
 };

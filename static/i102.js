@@ -1,9 +1,11 @@
-iweb.controller('i102', function($scope,$routeParams,$rootScope) {
+iweb.controller('i102', function($scope,$rootScope) {
   $scope.entity={}
-  $scope.location=[{}]
+  $scope.location=[{},{},{},{},{},{}]
   var map = new BMap.Map("myMap");    // 创建Map实例
-  $scope.factory=$routeParams.factory?parseInt($routeParams.factory):1
-  if($routeParams.factory){
+  var factoryList=['beijing','chongqing','sichuan','fujian','anhui','jiangsu'];
+  $scope.factory=factoryList.indexOf(location.href.split('/')[location.href.split('/').length-1])===-1?1:
+      factoryList.indexOf(location.href.split('/')[location.href.split('/').length-1])+1
+  if(factoryList.indexOf(location.href.split('/')[location.href.split('/').length-1])!==-1){
     setTimeout(function () {
       $(window).scrollTop($('.three').offset().top-180)
     },800)
@@ -50,13 +52,13 @@ iweb.controller('i102', function($scope,$routeParams,$rootScope) {
         div.style.width = '630px'
         div.style.height = '190px'
         div.style.padding = '30px 70px 20px 100px'
-        div.style.backgroundImage = "url(./img/i102/marker.png)"
+        div.style.backgroundImage = "url(/img/i102/marker.png)"
         div.style.backgroundSize = '100% 100%'
         var titleDiv = document.createElement('div')
         var titleImg = document.createElement('img')
         var textSpan = document.createElement('span')
         var subText = document.createElement('div')
-        titleImg.src = './img/i102/three7.png'
+        titleImg.src = '/img/i102/three7.png'
         titleImg.style.display = 'inline_block'
         titleImg.style.width = '36px'
         titleImg.style.position = 'relative'
@@ -105,7 +107,7 @@ iweb.controller('i102', function($scope,$routeParams,$rootScope) {
 
       var myCompOverlay = new ComplexCustomOverlay(new BMap.Point(lat, lng));
       map.addOverlay(myCompOverlay);//将标注添加到地图中
-      var myIcon = new BMap.Icon("./img/i102/pointer.png", new BMap.Size(40, 57));
+      var myIcon = new BMap.Icon("/img/i102/pointer.png", new BMap.Size(40, 57));
       var marker = new BMap.Marker(new BMap.Point(lat, lng), {icon: myIcon});
       map.addOverlay(marker);
     }
@@ -143,13 +145,13 @@ iweb.controller('i102', function($scope,$routeParams,$rootScope) {
         div.style.width = '315px'
         div.style.height = '85px'
         div.style.padding = '15px 35px 10px 50px'
-        div.style.backgroundImage = "url(./img/i102/marker.png)"
+        div.style.backgroundImage = "url(/img/i102/marker.png)"
         div.style.backgroundSize = '100% 100%'
         var titleDiv = document.createElement('div')
         var titleImg = document.createElement('img')
         var textSpan = document.createElement('span')
         var subText = document.createElement('div')
-        titleImg.src = './img/i102/three7.png'
+        titleImg.src = '/img/i102/three7.png'
         titleImg.style.display = 'inline_block'
         titleImg.style.width = '18px'
         titleImg.style.position = 'relative'
@@ -198,7 +200,7 @@ iweb.controller('i102', function($scope,$routeParams,$rootScope) {
 
       var myCompOverlay = new ComplexCustomOverlay(new BMap.Point(lat, lng));
       map.addOverlay(myCompOverlay);//将标注添加到地图中
-      var myIcon = new BMap.Icon("./img/i102/pointer.png", new BMap.Size(20, 28));
+      var myIcon = new BMap.Icon("/img/i102/pointer.png", new BMap.Size(20, 28));
       myIcon.setImageSize(new BMap.Size(20, 28))
       var marker = new BMap.Marker(new BMap.Point(lat, lng), {icon: myIcon});
       map.addOverlay(marker);
@@ -208,7 +210,7 @@ $scope.changeFactory=function (index) {
   $scope.factory=index
   setCenter($scope.location[$scope.factory-1].lat,$scope.location[$scope.factory-1].lng,$scope.location[$scope.factory-1].titleText,$scope.location[$scope.factory-1].subContent)
 }
-    apiconn.state_changed_handler = function () {
+    $rootScope.$on('STATE_CHANGED_HANDLER',function () {
         if (apiconn.conn_state == "LOGIN_SCREEN_ENABLED") {
             window.ajax({
                 obj:'user',
@@ -239,5 +241,5 @@ $scope.changeFactory=function (index) {
             })
 
         }
-    }
+    })
 })

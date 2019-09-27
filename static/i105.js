@@ -1,4 +1,4 @@
-iweb.controller('i105', function($scope) {
+iweb.controller('i105', function($scope,$rootScope) {
   $scope.entity={}
   // 百度地图API功能
   var map = new BMap.Map("myMapTwo");    // 创建Map实例
@@ -198,7 +198,7 @@ iweb.controller('i105', function($scope) {
       var marker = new BMap.Marker(new BMap.Point(lng, lat), {icon: myIcon});
       map.addOverlay(marker);
     }
-      apiconn.state_changed_handler = function () {
+      $rootScope.$on('STATE_CHANGED_HANDLER',function () {
           if (apiconn.conn_state == "LOGIN_SCREEN_ENABLED") {
               window.ajax({
                   obj:'user',
@@ -209,6 +209,6 @@ iweb.controller('i105', function($scope) {
                   setCenter(jo.info.longitude,jo.info.latitude,jo.info.title,jo.info.address)
               })
           }
-      }
+      })
   }
 })

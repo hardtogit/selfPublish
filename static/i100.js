@@ -1,9 +1,9 @@
-iweb.controller('i100', function($scope) {
+iweb.controller('i100', function($scope,$rootScope) {
   $scope.entity={}
   $scope.news={}
   $scope.goDetail=function(id){
     $(window).scrollTop(0)
-    goto_view('news/detail?id='+id)
+    goto_view('news/'+id)
   }
   $scope.goServer=function (id) {
     goto_view('partner?type='+id)
@@ -53,50 +53,44 @@ iweb.controller('i100', function($scope) {
           });
         },500)
         })
-
-        apiconn.state_changed_handler = function () {
-            if (apiconn.conn_state == "LOGIN_SCREEN_ENABLED") {
-
-            }
-        }
-      setTimeout(function () {
-        window.ajax({
-          obj:'user',
-          act:'homeread',
-          location:'pc'
-        },function (jo) {
-          $scope.entity=jo.info
-          // console.error(jo.info.video)
-          setTimeout(function () {
-            var mySwiper = new Swiper('.swiper-container', {
-              slidesPerView: 8,
-              spaceBetween: 5,
-              freeMode:true,
-              // autoplay:true,
-              pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-              },
-            });
-            $scope.slideNext=function(){
-              mySwiper.slideNext()
-            }
-            $scope.slidePrev=function(){
-              mySwiper.slidePrev()
-            }
-            var myBannerSwiper = new Swiper('.swiper-banner-container', {
-              // freeMode:true,
-              autoplay:jo.info.status==='生效'?false:true,
-              delay:5000,
-              setWrapperSize :true,
-              loop:true,
-              height:300
-            });
-          },0)
+        $rootScope.$on('STATE_CHANGED_HANDLER',function () {
+            window.ajax({
+                obj:'user',
+                act:'homeread',
+                location:'pc'
+            },function (jo) {
+                $scope.entity=jo.info
+                // console.error(jo.info.video)
+                setTimeout(function () {
+                    var mySwiper = new Swiper('.swiper-container', {
+                        slidesPerView: 8,
+                        spaceBetween: 5,
+                        freeMode:true,
+                        // autoplay:true,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                    $scope.slideNext=function(){
+                        mySwiper.slideNext()
+                    }
+                    $scope.slidePrev=function(){
+                        mySwiper.slidePrev()
+                    }
+                    var myBannerSwiper = new Swiper('.swiper-banner-container', {
+                        // freeMode:true,
+                        autoplay:jo.info.status==='生效'?false:true,
+                        delay:5000,
+                        setWrapperSize :true,
+                        loop:true,
+                        height:300
+                    });
+                },0)
+            })
         })
-      },300)
     }else{
-      setTimeout(function () {
+        $rootScope.$on('STATE_CHANGED_HANDLER',function () {
         window.ajax({
           obj: 'user',
           act: 'homeread',

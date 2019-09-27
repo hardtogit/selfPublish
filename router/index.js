@@ -91,6 +91,90 @@ router.get('/factory', async (ctx, next) => {
     ctx.body = htmlFile;
     await next()
 })
+router.get('/factory/anhui', async (ctx, next) => {
+    var htmlFile = await (new Promise(function(resolve, reject){
+        fs.readFile('./static/anhui.html', (err, data) => {
+            if (err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        });
+    }))
+    ctx.type = 'html';
+    ctx.body = htmlFile;
+    await next()
+})
+router.get('/factory/beijing', async (ctx, next) => {
+    var htmlFile = await (new Promise(function(resolve, reject){
+        fs.readFile('./static/beijing.html', (err, data) => {
+            if (err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        });
+    }))
+    ctx.type = 'html';
+    ctx.body = htmlFile;
+    await next()
+})
+router.get('/factory/chongqing', async (ctx, next) => {
+    var htmlFile = await (new Promise(function(resolve, reject){
+        fs.readFile('./static/chongqing.html', (err, data) => {
+            if (err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        });
+    }))
+    ctx.type = 'html';
+    ctx.body = htmlFile;
+    await next()
+})
+router.get('/factory/fujian', async (ctx, next) => {
+    var htmlFile = await (new Promise(function(resolve, reject){
+        fs.readFile('./static/fujian.html', (err, data) => {
+            if (err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        });
+    }))
+    ctx.type = 'html';
+    ctx.body = htmlFile;
+    await next()
+})
+router.get('/factory/jiangsu', async (ctx, next) => {
+    var htmlFile = await (new Promise(function(resolve, reject){
+        fs.readFile('./static/jiangsu.html', (err, data) => {
+            if (err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        });
+    }))
+    ctx.type = 'html';
+    ctx.body = htmlFile;
+    await next()
+})
+router.get('/factory/sichuan', async (ctx, next) => {
+    var htmlFile = await (new Promise(function(resolve, reject){
+        fs.readFile('./static/sichuan.html', (err, data) => {
+            if (err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        });
+    }))
+    ctx.type = 'html';
+    ctx.body = htmlFile;
+    await next()
+})
 router.get('/news', async (ctx, next) => {
     var htmlFile = await (new Promise(function(resolve, reject){
         fs.readFile('./static/news.html', (err, data) => {

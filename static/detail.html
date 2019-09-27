@@ -9,6 +9,8 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <title>永辉彩食鲜</title>
+    <meta name="keywords" content="新闻资讯">
+    <meta name="description" content=""/>
     <link rel="shortcut icon" href="/img/icon.ico">
     <link href="/bootstrap/less/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
@@ -51,6 +53,19 @@
         })();
     </script>
     <script type="text/javascript">
+        var htmlDc=document.getElementsByTagName('html')[0];
+        setRootSize=function () {
+            if($(window).width()<=992) {
+                var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+                var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+                htmlDc.style.fontSize = clientWidth / 3.75 + 'px';
+                htmlDc.style.minHeight = clientHeight + 'px';
+            }
+        };
+        setRootSize();
+        $(window).resize(function () {
+            setRootSize();
+        })
     </script>
 </head>
 <body ng-app="iweb" ng-controller="i107">

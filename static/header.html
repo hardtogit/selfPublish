@@ -16,7 +16,7 @@
                 <ul class="nav navbar-nav clearfix">
                     <li class="active"><a href="/home" data-href="/home" >首页 <span class="sr-only">(current)</span></a></li>
                     <li class="dropdown" ng-if="device==='pc'">
-                      <a class="dropdown-toggle" href="/company" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-href="/company">公司介绍</a>
+                      <a class="dropdown-toggle" onclick="goto_view('/company')" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-href="/company">公司介绍</a>
                       <ul class="dropdown-menu">
                         <li><a ng-click="goAnchor('one')" >企业介绍</a></li>
                         <li><a ng-click="goAnchor('two')" >企业荣誉</a></li>
@@ -25,24 +25,34 @@
                       </ul>
                     </li>
                     <li class="dropdown" ng-if="device==='pc'">
-                        <a class="dropdown-toggle"  href="/factory" data-href="/factory" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">工厂介绍</a>
+                        <a class="dropdown-toggle"  onclick="goto_view('/factory')" data-href="/factory" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">工厂介绍</a>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="(index,item) in factoryTitle"><a href="/factory?factory={{index+1}}">{{item.name.substring(0,2)}}</a></li>
+                            <li ><a href="/factory/beijing">北京</a></li>
+                            <li ><a href="/factory/chongqing">重庆</a></li>
+                            <li ><a href="/factory/sichuan">四川</a></li>
+                            <li ><a href="/factory/fujian">福建</a></li>
+                            <li ><a href="/factory/anhui">安徽</a></li>
+                            <li ><a href="/factory/jiangsu">江苏</a></li>
                         </ul>
                     </li>
                   <li class="dropdown" ng-if="device==='mobile'">
-                    <a class="dropdown-toggle" onclick="goto_view('company')" style="position: relative"  role="button" aria-haspopup="true" aria-expanded="false" data-href="#/company">公司介绍 <div class="arrow-menu"></div></a>
+                    <a class="dropdown-toggle" onclick="goto_view('/company')" style="position: relative"  role="button" aria-haspopup="true" aria-expanded="false" data-href="/company">公司介绍 <div class="arrow-menu"></div></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#/company?type=1">企业介绍</a></li>
-                      <li><a href="#/company?type=2">企业荣誉</a></li>
-                      <li><a href="#/company?type=3">发展历程</a></li>
-                      <li><a href="#/company?type=4">企业目标</a></li>
+                      <li><a ng-click="goAnchor('one')" >企业介绍</a></li>
+                      <li><a ng-click="goAnchor('two')">企业荣誉</a></li>
+                      <li><a ng-click="goAnchor('three')">发展历程</a></li>
+                      <li><a ng-click="goAnchor('four')">企业目标</a></li>
                     </ul>
                   </li>
                   <li class="dropdown"  ng-if="device==='mobile'">
-                    <a class="dropdown-toggle"  onclick="goto_view('factory')" style="position: relative" data-href="#/i102" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">工厂介绍 <div class="arrow-menu"></div></a>
+                    <a class="dropdown-toggle"  onclick="goto_view('/factory')" style="position: relative" data-href="/factory" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">工厂介绍 <div class="arrow-menu"></div></a>
                     <ul class="dropdown-menu">
-                      <li ng-repeat="(index,item) in factoryTitle"><a href="#/factory?factory={{index+1}}">{{item.name.substring(0,2)}}</a></li>
+                        <li ><a href="/factory/beijing">北京</a></li>
+                        <li ><a href="/factory/chongqing">重庆</a></li>
+                        <li ><a href="/factory/sichuan">四川</a></li>
+                        <li ><a href="/factory/fujian">福建</a></li>
+                        <li ><a href="/factory/anhui">安徽</a></li>
+                        <li ><a href="/factory/jiangsu">江苏</a></li>
                     </ul>
                   </li>
                     <li><a href="/news" data-href="/news">新闻资讯</a></li>

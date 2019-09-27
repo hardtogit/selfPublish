@@ -67,7 +67,7 @@
     text-align: center;
   }
   .i102 .three .regions .region {
-    background-image: url("./img/i102/three2.png");
+    background-image: url("/img/i102/three2.png");
     cursor: pointer;
     display: inline-block;
     vertical-align: top;
@@ -85,7 +85,7 @@
     margin: 0 auto 10px auto;
   }
   .i102 .three .regions .region.active {
-    background-image: url("./img/i102/three1.png");
+    background-image: url("/img/i102/three1.png");
     color: #fff;
     padding-top: 30px;
   }
@@ -203,7 +203,7 @@
     text-align: center;
   }
   .i102 .three .regions .region {
-    background-image: url("./img/i102/three2.png");
+    background-image: url("/img/i102/three2.png");
     cursor: pointer;
     float: left;
     width: 155.2px;
@@ -220,7 +220,7 @@
     margin: 0 auto 10px auto;
   }
   .i102 .three .regions .region.active {
-    background-image: url("./img/i102/three1.png");
+    background-image: url("/img/i102/three1.png");
     color: #fff;
     padding-top: 24px;
   }
@@ -338,7 +338,7 @@
   }
   .i102 .three .regions .region {
     box-sizing: border-box;
-    background-image: url("./img/i102/three2.png");
+    background-image: url("/img/i102/three2.png");
     cursor: pointer;
     display: inline-block;
     vertical-align: top;
@@ -357,7 +357,7 @@
     margin: 0 auto 10px auto;
   }
   .i102 .three .regions .region.active {
-    background-image: url("./img/i102/three1.png");
+    background-image: url("/img/i102/three1.png");
     color: #fff;
     padding-top: 0.16rem;
   }

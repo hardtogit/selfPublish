@@ -1,9 +1,9 @@
-iweb.controller('i107', function($scope) {
+iweb.controller('i107', function($scope,$rootScope) {
   $scope.entity={}
   $scope.close=function(){
     history.go(-1)
   }
-    apiconn.state_changed_handler = function () {
+    $rootScope.$on('STATE_CHANGED_HANDLER',function () {
         if (apiconn.conn_state == "LOGIN_SCREEN_ENABLED") {
             window.ajax({
                 obj:'user',
@@ -12,6 +12,8 @@ iweb.controller('i107', function($scope) {
                 location:'pc',
             },function (jo) {
                 $scope.detail=jo.info
+                $('title').html(jo.info.title+'-永辉彩食鲜官网')
+                $("meta[name='description']").attr('content',jo.info.description)
             })
             window.ajax({
                 obj:'user',
@@ -22,5 +24,5 @@ iweb.controller('i107', function($scope) {
                 $scope.entity=jo.info
             })
         }
-    }
+    })
 })
