@@ -32,6 +32,9 @@
   .i107 .detail {
     padding: 60px 49px 60px 48px;
   }
+  .i107 .detail .ql-align-center {
+    text-align: center;
+  }
   .i107 .detail .title {
     font-size: 24px;
     border-bottom: 2px dashed #ddd;
@@ -179,6 +182,9 @@
   .i107 .two .detail {
     padding: 0 49px 60px 48px;
   }
+  .i107 .two .detail .ql-align-center {
+    text-align: center;
+  }
   .i107 .two .detail .title {
     font-size: 24px;
     border-bottom: 2px dashed #ddd;
@@ -325,6 +331,9 @@
   }
   .i107 .two .detail {
     padding: 0 0 0.2rem 0;
+  }
+  .i107 .two .detail .ql-align-center {
+    text-align: center;
   }
   .i107 .two .detail .title {
     font-size: 0.12rem;

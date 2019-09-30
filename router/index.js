@@ -1,39 +1,6 @@
 const Router = require('koa-router')
 const fs =require('fs')
 const router = new Router()
-// when('/home', {
-//     templateUrl: 'i100.html',
-//     controller: 'i100'
-// }).
-// when('/company', {
-//     templateUrl: 'i101.html',
-//     controller: 'i101'
-// }).
-// when('/factory', {
-//     templateUrl: 'i102.html',
-//     controller: 'i102'
-// }).
-// when('/news', {
-//     templateUrl: 'i103.html',
-//     controller: 'i103'
-// }).
-// when('/partner', {
-//     templateUrl: 'i104.html',
-//     controller: 'i104'
-// }).
-// when('/cooperation', {
-//     templateUrl: 'i105.html',
-//     controller: 'i105'
-// }).
-// when('/join', {
-//     templateUrl: 'i106.html',
-//     controller: 'i106'
-// }).
-// when('/news/detail', {
-//     templateUrl: 'i107.html',
-//     controller: 'i107'
-// }).
-// /home
 router.get('/', async (ctx, next) => {
     var htmlFile = await (new Promise(function(resolve, reject){
         fs.readFile('../static.index.html', (err, data) => {
@@ -66,6 +33,62 @@ router.get('/home', async (ctx, next) => {
 router.get('/company', async (ctx, next) => {
     var htmlFile = await (new Promise(function(resolve, reject){
         fs.readFile('./static/company.html', (err, data) => {
+            if (err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        });
+    }))
+    ctx.type = 'html';
+    ctx.body = htmlFile;
+    await next()
+})
+router.get('/development', async (ctx, next) => {
+    var htmlFile = await (new Promise(function(resolve, reject){
+        fs.readFile('./static/development.html', (err, data) => {
+            if (err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        });
+    }))
+    ctx.type = 'html';
+    ctx.body = htmlFile;
+    await next()
+})
+router.get('/honor', async (ctx, next) => {
+    var htmlFile = await (new Promise(function(resolve, reject){
+        fs.readFile('./static/honor.html', (err, data) => {
+            if (err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        });
+    }))
+    ctx.type = 'html';
+    ctx.body = htmlFile;
+    await next()
+})
+router.get('/profile', async (ctx, next) => {
+    var htmlFile = await (new Promise(function(resolve, reject){
+        fs.readFile('./static/profile.html', (err, data) => {
+            if (err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        });
+    }))
+    ctx.type = 'html';
+    ctx.body = htmlFile;
+    await next()
+})
+router.get('/target', async (ctx, next) => {
+    var htmlFile = await (new Promise(function(resolve, reject){
+        fs.readFile('./static/target.html', (err, data) => {
             if (err){
                 reject(err);
             }else{

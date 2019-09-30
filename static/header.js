@@ -1,35 +1,41 @@
 iweb.controller('header', function($scope,$anchorScroll,$location,$rootScope) {
     //锚点
     $anchorScroll.yOffset = 47;//使用锚点时固定向下偏移47px
-    $scope.goAnchor = function(anchor) {
-        if(window.location.href.indexOf('company')!==-1){
-            // 将location.hash的值设置为目标元素的id
-            $location.hash(anchor);
-            // 调用 $anchorScroll()
+    setTimeout(function () {
+        if(window.location.href.indexOf('profile')!==-1) {
+            $location.hash('one');
             $anchorScroll();
-        }else{
-            location.href='/company?anchor='+anchor
         }
-    }
-
-    if(window.location.href.indexOf('company')!==-1) {
-        var anchor = getQueryString('anchor') || 'one'
-        $location.hash(anchor);
-        $anchorScroll();
-    }
-  // $scope.factoryTitle=[{}]
+        if(window.location.href.indexOf('honor')!==-1) {
+            $location.hash('two');
+            $anchorScroll();
+        }
+        if(window.location.href.indexOf('development')!==-1) {
+            $location.hash('three');
+            $anchorScroll();
+        }
+        if(window.location.href.indexOf('target')!==-1) {
+            $location.hash('four');
+            $anchorScroll();
+        }
+    },300)
   $(function () {
       var path=window.location.href
      var arr=$('.navbar-nav>li>a')
-     if($.fn.fullpage.destroy&&path.indexOf('i100')===-1){
-       $.fn.fullpage.destroy('all');
-     }
      var flag=true
       arr.each(function (index,item) {
         if(path.indexOf($(item).attr('data-href'))!==-1){
           $(item).addClass('active')
             flag=false
         }
+
+      })
+      var companyRouter=['profile','honor','development','target']
+      $(companyRouter).each(function (index,item) {
+          if(path.indexOf(item)!==-1){
+              $(arr[1]).addClass('active')
+              flag=false
+          }
       })
       if(flag){
           $(arr[0]).addClass('active')
@@ -55,15 +61,4 @@ iweb.controller('header', function($scope,$anchorScroll,$location,$rootScope) {
       })
   }
   })
-    // $rootScope.$on('STATE_CHANGED_HANDLER',function () {
-    //     if (apiconn.conn_state == "LOGIN_SCREEN_ENABLED") {
-    //         window.ajax({
-    //             obj: 'user',
-    //             act: 'factorread',
-    //             location: 'pc'
-    //         }, function (jo) {
-    //             $scope.factoryTitle = jo.info.ftymanage
-    //         })
-    //     }
-    // })
 })

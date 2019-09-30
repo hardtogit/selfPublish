@@ -13,7 +13,9 @@ iweb.controller('i107', function($scope,$rootScope) {
             },function (jo) {
                 $scope.detail=jo.info
                 $('title').html(jo.info.title+'-永辉彩食鲜官网')
-                $("meta[name='description']").attr('content',jo.info.description)
+                var reg=/<\/?.+?\/?>/g;
+                console.log(jo.info.detail.replace(reg,'').substr(0,150));
+                $("meta[name='description']").attr('content',jo.info.detail.replace(reg,'').substr(0,150))
             })
             window.ajax({
                 obj:'user',
