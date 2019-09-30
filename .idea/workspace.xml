@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc56c3f2-a3c5-4443-a33a-381d5810eeaa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/development.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/honor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/target.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/yh_ga" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/i107.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/i107.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/i107.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/i107.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/aos-animation.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/aos-animation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/i107.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/i107.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/i107.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/i107.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,41 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="23" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/header.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1178">
-              <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="development.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/development.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
               <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
-              <folding>
-                <element signature="n#style#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="target.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/target.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
               <folding>
                 <element signature="n#style#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -85,23 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="i107.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="i107.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/i107.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="365" column="30" lean-forward="true" selection-start-line="365" selection-start-column="30" selection-end-line="365" selection-end-column="30" />
+            <state relative-caret-position="212">
+              <caret line="344" column="24" selection-start-line="344" selection-start-column="9" selection-end-line="344" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="honor.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/honor.html">
+      <file leaf-file-name="i107.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/i107.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="93" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
-              <folding>
-                <element signature="n#style#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="319">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -109,8 +64,35 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4769">
-              <caret line="251" column="7" lean-forward="true" selection-start-line="251" selection-start-column="7" selection-end-line="251" selection-end-column="7" />
+            <state relative-caret-position="122">
+              <caret line="242" column="17" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yh_ga" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/yh_ga">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1577">
+              <caret line="83" column="95" selection-start-line="83" selection-start-column="91" selection-end-line="83" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aos-animation.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/aos-animation.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="266" lean-forward="true" selection-start-line="266" selection-end-line="266" />
             </state>
           </provider>
         </entry>
@@ -127,8 +109,8 @@
       <file leaf-file-name="i107.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/i107.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="105" selection-start-line="17" selection-start-column="105" selection-end-line="17" selection-end-column="105" />
+            <state relative-caret-position="228">
+              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -148,6 +130,7 @@
       <find>$locationProvider</find>
       <find>entity</find>
       <find>./img</find>
+      <find>ql-align-center</find>
     </findStrings>
     <replaceStrings>
       <replace>/img</replace>
@@ -195,7 +178,9 @@
         <option value="$PROJECT_DIR$/static/target.html" />
         <option value="$PROJECT_DIR$/router/index.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/static/yh_ga" />
         <option value="$PROJECT_DIR$/static/i107.js" />
+        <option value="$PROJECT_DIR$/static/css/aos-animation.css" />
       </list>
     </option>
   </component>
@@ -214,10 +199,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="128" />
-    <option name="y" value="7" />
-    <option name="width" value="1653" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -236,6 +221,12 @@
               <item name="selfPublish" type="b2602c69:ProjectViewProjectNode" />
               <item name="selfPublish" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selfPublish" type="b2602c69:ProjectViewProjectNode" />
+              <item name="selfPublish" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,7 +275,7 @@
       <workItem from="1569653795828" duration="2577000" />
       <workItem from="1569656473389" duration="4796000" />
       <workItem from="1569759477496" duration="2266000" />
-      <workItem from="1569821204251" duration="13000" />
+      <workItem from="1569821204251" duration="5894000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <created>1569520612329</created>
@@ -314,24 +305,30 @@
       <option name="project" value="LOCAL" />
       <updated>1569605672302</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="初步完成">
+      <created>1569821275190</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569821275190</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38720000" />
+    <option name="totallyTimeSpent" value="44601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21247357" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3472516" side_tool="true" visible="true" weight="0.1399776" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49788582" weight="0.5195969" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026427" side_tool="true" weight="0.5195969" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49735728" visible="true" weight="0.27099663" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.6527484" visible="true" weight="0.1399776" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.6527484" weight="0.39865622" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -355,17 +352,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="初步完成" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/i100.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/pageUtil.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/i106.html" />
     <entry file="file://$PROJECT_DIR$/static/APIConnection.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -514,13 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/factory.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -622,16 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/development.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
-          <folding>
-            <element signature="n#style#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/target.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -642,24 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4769">
-          <caret line="251" column="7" lean-forward="true" selection-start-line="251" selection-start-column="7" selection-end-line="251" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" selection-start-line="18" selection-start-column="3" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/i107.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="105" selection-start-line="17" selection-start-column="105" selection-end-line="17" selection-end-column="105" />
         </state>
       </provider>
     </entry>
@@ -675,8 +630,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/i107.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="365" column="30" lean-forward="true" selection-start-line="365" selection-start-column="30" selection-end-line="365" selection-end-column="30" />
+        <state relative-caret-position="212">
+          <caret line="344" column="24" selection-start-line="344" selection-start-column="9" selection-end-line="344" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/i107.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/development.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
+          <folding>
+            <element signature="n#style#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="242" column="17" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/i107.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/yh_ga">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1577">
+          <caret line="83" column="95" selection-start-line="83" selection-start-column="91" selection-end-line="83" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/aos-animation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="266" lean-forward="true" selection-start-line="266" selection-end-line="266" />
         </state>
       </provider>
     </entry>

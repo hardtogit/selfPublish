@@ -261,8 +261,9 @@ a {
   margin: 0 auto;
   max-width: 90%;
   /*--*/
-  -webkit-transform: translateZ(1000px);
-          transform: translateZ(1000px); }
+  /*-webkit-transform: translateZ(1000px);*/
+          /*transform: translateZ(1000px);*/
+}
 
 .code {
   width: 40%;

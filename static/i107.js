@@ -12,10 +12,10 @@ iweb.controller('i107', function($scope,$rootScope) {
                 location:'pc',
             },function (jo) {
                 $scope.detail=jo.info
-                $('title').html(jo.info.title+'-永辉彩食鲜官网')
-                var reg=/<\/?.+?\/?>/g;
-                console.log(jo.info.detail.replace(reg,'').substr(0,150));
-                $("meta[name='description']").attr('content',jo.info.detail.replace(reg,'').substr(0,150))
+                // $('title').html(jo.info.title+'-永辉彩食鲜官网')
+                // var reg=/<\/?.+?\/?>/g;
+                // console.log(jo.info.detail.replace(reg,'').substr(0,150));
+                // $("meta[name='description']").attr('content',jo.info.detail.replace(reg,'').substr(0,150))
             })
             window.ajax({
                 obj:'user',
